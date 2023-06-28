@@ -1,10 +1,11 @@
-﻿using System;
+﻿using LogicalProgram;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Day6
+namespace LogicalPrograms
 {
     public class Program
     {
@@ -15,7 +16,8 @@ namespace Day6
                 while (flag)
                 {
                     Console.WriteLine("\n" + "1.FibonacciSeries" + "\n");
-                    Console.WriteLine("\n" + "2.For EXIT" + "\n");
+                    Console.WriteLine("\n" + "2.Check The Number Is Perfect Or Not" + "\n");
+                    Console.WriteLine("\n" + "3.For EXIT" + "\n");
                     Console.WriteLine("Enter your choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -25,6 +27,11 @@ namespace Day6
                             series.Checkfibonacci();
                             break;
                         case 2:
+                            PerfectNumber perfectNumber = new PerfectNumber();
+                            perfectNumber.Checkperfectnumber();
+                            break;
+
+                        case 3:
                             flag = false;
                             break;
                         default:
