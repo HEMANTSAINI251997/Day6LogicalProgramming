@@ -18,7 +18,8 @@ namespace LogicalPrograms
                     Console.WriteLine("\n" + "1.FibonacciSeries" + "\n");
                     Console.WriteLine("\n" + "2.Check The Number Is Perfect Or Not" + "\n");
                     Console.WriteLine("\n" + "3.Check The Number Is Prime Or Not" + "\n");
-                    Console.WriteLine("\n" + "4.For EXIT" + "\n");
+                    Console.WriteLine("\n" + "4.For Reverse a Number" + "\n");
+                    Console.WriteLine("\n" + "5.For EXIT" + "\n");
                     Console.WriteLine("Enter your choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -36,6 +37,10 @@ namespace LogicalPrograms
                             prime.Checkprime();
                             break;
                         case 4:
+                            ReverseNumber reversenumber = new ReverseNumber();
+                            reversenumber.Checkreverse();
+                            break;
+                        case 5:
                             flag = false;
                             break;
                         default:
